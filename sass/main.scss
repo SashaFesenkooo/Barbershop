@@ -3,6 +3,11 @@
 @import './utils/base';
 @import './utils/_breacpoints';
 
+// Components
+@import './components/button';
 
 // Sections
-@import './sectioms/header';
+@import './sections/header';
+@import './sections/about';
+@import './sections/services';
+

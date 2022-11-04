@@ -22,7 +22,8 @@
 
     &__title {
     margin-bottom: 20px;
-
+    
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 48px;
     line-height: 1.26;
@@ -40,7 +41,7 @@
     }
 }
 
-.header__container {
+.container {
     margin: 0 auto;
     padding: 0px 31px;
     max-width: 480px;
@@ -65,6 +66,7 @@
 .menu-container {
     @media (max-width:767px) {
     position: absolute;
+    z-index: 10;
     top: 0;
     right: 0;
     width: 337px;
@@ -129,21 +131,6 @@
     color: $primaryTextColor;
 }
 
-.button {
-    margin-top: 24px;
-    padding: 12px 37px;
-
-    border: 1px solid #FF6C00;
-    border-radius: 25px;
-    background-color: transparent;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1.33;
-    letter-spacing: 0.09em;
-    text-transform: uppercase;
-    color: $primaryTextColor;
-}
-
 .social {
     &__list{
     position: relative;
@@ -156,7 +143,9 @@
     }
 
     &__link {
-        margin-left:  100px;
+        display: flex;
+        align-items: center;
+       
         font-weight: 600;
         font-size: 14px;
         line-height: 1.35;
@@ -165,14 +154,15 @@
     }
 }
 
+.social__link--first::before{
+        content: "";
+        display: block;
+        margin-right: 40px;
+        width: 60px;
+        height: 1px;
+        background: $primaryTextColor;
+}
 
-
-.social__item:first-child:before{
-    content: '';
-    position: absolute;
-    top: 11px;
-    display: block;
-    width: 60px;
-    height: 1px;
-    background: #303030;
+.social__link--second {
+    margin-left: 100px;
 }

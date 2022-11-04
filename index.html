@@ -19,7 +19,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__container">
+      <div class="container">
         <div class="wrap">
           <a href="" class="header__link">
             <svg class="logo" width="69" height="55">
@@ -72,13 +72,19 @@
               </ul>
             </nav>
             <a href="tel:++380441111111" class="tel">+38 044 111 11 11</a>
-            <button type="button" class="button">online-booking</button>
+            <button type="button" class="button button--mobile">
+              online-booking
+            </button>
             <ul class="social__list">
               <li class="social__item">
-                <a href="#" class="social__link">Instagram</a>
+                <a href="#" class="social__link social__link--first"
+                  >Instagram</a
+                >
               </li>
               <li class="social__item">
-                <a href="#" class="social__link">Youtube</a>
+                <a href="#" class="social__link social__link--second"
+                  >Youtube</a
+                >
               </li>
             </ul>
           </div>
@@ -93,22 +99,68 @@
         </div>
       </div>
     </header>
-
-    <section class="about">
+    <!-- About -->
+    <section class="section about">
       <div class="container">
-        <span class="txt">About</span>
+        <p class="txt">About</p>
         <h2 class="about__title">Best Barbershop in your city</h2>
-        <p class="about__subtitle">
+        <p class="about__subtitle text">
           If you want to add more confidence to your image, you should visit us
         </p>
-        <p class="about__text">
+        <p class="about__text text">
           We are a team that never stops at what has been achieved and are
           thirsty for changes. And when you fall into the hands of our master,
           you will never be the same again. We are a team that is always "on the
           same wave" with clients. Therefore, we are always ready to improve
           everyone who comes to us!
         </p>
-        <button type="button" class="button">online-booking</button>
+        <button type="button" class="button button--about">
+          online-booking
+        </button>
+      </div>
+    </section>
+    <!-- Services -->
+    <section class="section services">
+      <div class="container">
+        <p class="txt txt--price">Spend your time with the best masters</p>
+        <h2 class="services__title">Services and prices</h2>
+        <ul class="prices__list">
+          <li class="prices__item">
+            <p class="prices__text">Men’s haircut</p>
+            <p class="prices__text">from 300 uah.</p>
+          </li>
+          <li class="prices__item">
+            <p class="prices__text">Beard trim</p>
+            <p class="prices__text">from 200 uah.</p>
+          </li>
+          <li class="prices__item">
+            <p class="prices__text">Mustache trim</p>
+            <p class="prices__text">from 200 uah.</p>
+          </li>
+          <li class="prices__item">
+            <p class="prices__text">Straight razor shave</p>
+            <p class="prices__text">from 200 uah.</p>
+          </li>
+          <li class="prices__item">
+            <p class="prices__text">Trainee’s haircut</p>
+            <p class="prices__text">from 50 uah.</p>
+          </li>
+          <li class="prices__item">
+            <p class="prices__text">Haircut under the nozzle</p>
+            <p class="prices__text">from 200 uah.</p>
+          </li>
+          <li class="prices__item">
+            <p class="prices__text">Children’s haircut (0-12 y.o.)</p>
+            <p class="prices__text">from 300 uah.</p>
+          </li>
+          <li class="prices__item">
+            <p class="prices__text">Camouflage of grey hair</p>
+            <p class="prices__text">from 200 uah.</p>
+          </li>
+        </ul>
+        <button type="button" class="button button--about">
+          online-booking
+        </button>
       </div>
     </section>
     <script defer src="./js/mobile-menu.js"></script>

@@ -1,0 +1,25 @@
+.button {
+    height: 40px;
+    border: 1px solid #FF6C00;
+    border-radius: 25px;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: $primaryTextColor;
+}
+
+.button {
+    &--mobile {
+        margin-top: 24px;   
+        min-width: 194px;    
+    }
+}
+
+.button {
+    &--about{
+        min-width: 160px;
+    }
+}

@@ -1,6 +1,11 @@
 body {
     font-family: 'Open Sans', sans-serif;
-    color: $primaryWhiteColor;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.section{
+    padding: 84px 0px;
 }
 
 h1,
@@ -12,7 +17,12 @@ h6,
 ul,
 p,
 figure {
+    padding: 0;
     margin: 0;
+}
+
+li {
+    list-style: none;
 }
 
 a {

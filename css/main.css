@@ -1,6 +1,11 @@
 body {
   font-family: "Open Sans", sans-serif;
-  color: #ffffff;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.section {
+  padding: 84px 0px;
 }
 
 h1,
@@ -12,11 +17,38 @@ h6,
 ul,
 p,
 figure {
+  padding: 0;
   margin: 0;
+}
+
+li {
+  list-style: none;
 }
 
 a {
   text-decoration: none;
+}
+
+.button {
+  height: 40px;
+  border: 1px solid #FF6C00;
+  border-radius: 25px;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #303030;
+}
+
+.button--mobile {
+  margin-top: 24px;
+  min-width: 194px;
+}
+
+.button--about {
+  min-width: 160px;
 }
 
 .header {
@@ -40,6 +72,7 @@ a {
 }
 .header__title {
   margin-bottom: 20px;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 48px;
   line-height: 1.26;
@@ -55,7 +88,7 @@ a {
   color: #9DA4BD;
 }
 
-.header__container {
+.container {
   margin: 0 auto;
   padding: 0px 31px;
   max-width: 480px;
@@ -80,6 +113,7 @@ a {
 @media (max-width: 767px) {
   .menu-container {
     position: absolute;
+    z-index: 10;
     top: 0;
     right: 0;
     width: 337px;
@@ -135,20 +169,6 @@ a {
   color: #303030;
 }
 
-.button {
-  margin-top: 24px;
-  padding: 12px 37px;
-  border: 1px solid #FF6C00;
-  border-radius: 25px;
-  background-color: transparent;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  color: #303030;
-}
-
 .social__list {
   position: relative;
   margin-top: 64px;
@@ -158,7 +178,8 @@ a {
   margin-bottom: 24px;
 }
 .social__link {
-  margin-left: 100px;
+  display: flex;
+  align-items: center;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.35;
@@ -166,12 +187,86 @@ a {
   color: #303030;
 }
 
-.social__item:first-child:before {
+.social__link--first::before {
   content: "";
-  position: absolute;
-  top: 11px;
+  display: block;
+  margin-right: 40px;
+  width: 60px;
+  height: 1px;
+  background: #303030;
+}
+
+.social__link--second {
+  margin-left: 100px;
+}
+
+.txt {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  color: #303030;
+}
+.txt::before {
+  content: "";
+  margin-right: 20px;
   display: block;
   width: 60px;
   height: 1px;
   background: #303030;
+}
+
+.about__title {
+  margin-bottom: 20px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  color: #303030;
+}
+.about__subtitle {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.62;
+}
+.about__text {
+  margin-bottom: 40px;
+  line-height: 1.85;
+}
+
+.text {
+  letter-spacing: 0.02em;
+  color: #555555;
+}
+
+.services {
+  background-color: #111319;
+  background-image: url(../images/prices.png), linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.services__title {
+  margin-bottom: 44px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+.txt--price {
+  color: rgba(157, 164, 189, 0.6);
+}
+.txt--price::before {
+  background-color: rgba(157, 164, 189, 0.6);
+}
+
+.prices__item {
+  display: flex;
+  justify-content: space-between;
 }/*# sourceMappingURL=main.css.map */

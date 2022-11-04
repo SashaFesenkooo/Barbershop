@@ -1,0 +1,53 @@
+.txt {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    color: $primaryTextColor;
+
+    &::before {
+        content: "";
+        margin-right: 20px;
+        display: block;
+        width: 60px;
+        height: 1px;
+        background: $primaryTextColor;
+    }
+}
+
+.about {
+    
+    &__title {
+        margin-bottom: 20px;
+
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 1.17;
+        letter-spacing: 0.05em;
+        color: $primaryTextColor;
+    }
+
+    &__subtitle {
+        margin-bottom: 20px;
+
+        font-size: 16px;
+        line-height: 1.62;
+    }
+
+    &__text {
+        margin-bottom: 40px;
+
+        line-height: 1.85;
+    }
+}
+
+.text {
+    letter-spacing: 0.02em;
+    color: $secondaryTextColor;
+}
+
