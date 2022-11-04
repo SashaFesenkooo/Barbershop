@@ -146,6 +146,7 @@
 
 .social {
     &__list{
+    position: relative;
     margin-top: 64px;
     padding: 0;
     }
@@ -155,6 +156,7 @@
     }
 
     &__link {
+        margin-left:  100px;
         font-weight: 600;
         font-size: 14px;
         line-height: 1.35;
@@ -163,11 +165,14 @@
     }
 }
 
-.social__link:last-child::before{
+
+
+.social__item:first-child:before{
     content: '';
     position: absolute;
+    top: 11px;
     display: block;
     width: 60px;
-    height: 2px;
+    height: 1px;
     background: #303030;
 }
