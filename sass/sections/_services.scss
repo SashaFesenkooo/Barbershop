@@ -25,8 +25,28 @@ background-size: cover;
 }
 
 .prices {
+    &__list {
+        background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+    }
+
     &__item {
         display: flex;
         justify-content: space-between;
+
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        line-height: 1.42;
+        letter-spacing: 0.02em;
+        color: $TextColor;
+    }
+
+    &__text::after{
+        content: '';
+        display: block;
+        height: 1px;
+        width: 10px;
+        background: rgba(157, 164, 189, 0.12);
     }
 }
