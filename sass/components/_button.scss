@@ -1,5 +1,6 @@
 .button {
     height: 40px;
+    display: block;
     border: 1px solid #FF6C00;
     border-radius: 25px;
     background-color: transparent;
@@ -13,13 +14,19 @@
 
 .button {
     &--mobile {
-        margin-top: 24px;   
-        min-width: 194px;    
+        margin-top: 24px;
+        min-width: 194px;
     }
-}
 
-.button {
     &--about{
         min-width: 160px;
+    }
+
+    &--prices {
+        margin: 0 auto;
+        margin-top: 44px;
+        min-width: 160px;
+
+        color: $primaryWhiteColor;
     }
 }

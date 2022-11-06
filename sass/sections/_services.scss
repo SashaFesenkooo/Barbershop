@@ -27,13 +27,24 @@ background-size: cover;
 .prices {
     &__list {
         background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+        padding: 30px 20px 30px 40px;
     }
 
     &__item {
         display: flex;
         justify-content: space-between;
+        align-items: baseline;
 
         margin-bottom: 20px;
+    }
+
+    &__item::after {
+        content: '';
+        flex-grow: 1;
+        margin: 0px 4px;
+
+        height: 1px;
+        background: rgba(157, 164, 189, 0.12);
     }
 
     &__text {
@@ -42,11 +53,7 @@ background-size: cover;
         color: $TextColor;
     }
 
-    &__text::after{
-        content: '';
-        display: block;
-        height: 1px;
-        width: 10px;
-        background: rgba(157, 164, 189, 0.12);
+    &__text:last-child {
+        order: 1;
     }
 }
